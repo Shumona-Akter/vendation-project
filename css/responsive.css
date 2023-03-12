@@ -532,8 +532,11 @@
             width: 300px;
         }
         .dispay-log-form{
-            height: 600px;
+            height: 500px;
             display: flex;
+        }
+        .all-form-left button {
+            margin-top: 0px;
         }
 }
 
