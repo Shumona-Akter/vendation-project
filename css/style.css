@@ -56,6 +56,7 @@ a{
     padding: 15px 0;
     text-align: center;
     border-radius: 4px;
+    cursor: pointer;
 }
 /* menu end */
 
@@ -495,12 +496,12 @@ color: #CCCCCC;
 }
 .item-2{
     height: 330px;
-    background: url(../images/mistake2.jpeg) no-repeat center / cover;
+    background: url(../images/Content/benefis2.jpg) no-repeat center / cover;
     
 }
 .item-3{
     height: 330px;
-    background: url(../images/Content/content-3.jpeg) no-repeat center / cover;
+    background: url(../images/Content/benefits3.jpg) no-repeat center / cover;
     
 }
 .item-4{
@@ -515,7 +516,7 @@ color: #CCCCCC;
 }
 .item-6{
     height: 330px;
-    background: url(../images/Content/content-7.jpeg) no-repeat center / cover;
+    background: url(../images/Content/benefits6.jpg) no-repeat center / cover;
     
 }
 .position-item{
@@ -951,6 +952,14 @@ video{
     justify-content: center;
     height: 100vh;
 }
+
+.main-display-login-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
 .login-form-all-btn{
     position: relative;
     width: 700px;
@@ -958,7 +967,7 @@ video{
 
 
 .dispay-log-form{
-    height: 500px;
+    height: 550px;
     display: flex;
 }
 .all-form-left{
@@ -983,6 +992,7 @@ video{
     line-height: 28px;
     color: #000000;
     display: block;
+    text-transform: capitalize;
 }
 .all-form-left label span{
     color: #FF3333;
@@ -1071,7 +1081,7 @@ video{
     height: 200px;
     line-height: 200px;
     text-align: center;
-    background-color: #005c0c;
+    background-color: var(--violate);
 }
 .sucess h1{
     font-family: var(--ff2);
@@ -1090,10 +1100,15 @@ video{
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
-    color: #005c0c;
+    color: var(--violate);
     background: #ffffff;
 }
 
 #nav-boots{
     cursor: pointer;
+}
+
+.text-white-con{
+    cursor: pointer;
+    color: #FFC2EF;
 }

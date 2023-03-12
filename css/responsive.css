@@ -8,6 +8,9 @@
         height: 433px;
         margin: 0 20px 0 0;
     }
+    .social-icon {
+        width: 100%;
+    }
 } 
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -33,6 +36,9 @@
     #get-boots  .slide-img{
         height: 400px;
         margin: 0 20px 0 0;
+    }
+    .social-icon {
+        width: 100%;
     }
     
     
@@ -101,6 +107,9 @@
     #get-boots  .slide-img{
         height: 370px;
         margin: 0 20px 0 0;
+    }
+    .social-icon {
+        width: 100%;
     }
 }
 
@@ -188,6 +197,26 @@
         font-style: normal;
         font-weight: 600;
         font-size: 55px;
+    }
+    .login-form-all-btn{
+        position: relative;
+        width: 450px;
+    }
+    .dispay-log-form{
+        height: 500px;
+        display: flex;
+    }
+    .all-form-left button {
+        margin-top: 0px;
+    }
+    .all-form-left{
+        width: 100%;
+    }
+    .all-form-right{
+        display: none;
+    }
+    .social-icon {
+        width: 100%;
     }
      
 } 
@@ -299,7 +328,23 @@
         .counter-paradise p{
             color: #CCCCCC;
         }
-
+        .login-form-all-btn{
+            position: relative;
+            width: 300px;
+        }
+        .dispay-log-form{
+            height: 500px;
+            display: flex;
+        }
+        .all-form-left button {
+            margin-top: 0px;
+        }
+        .all-form-left{
+            width: 100%;
+        }
+        .all-form-right{
+            display: none;
+        }
         
  
 } 
@@ -480,6 +525,15 @@
         }
         .login-main{
             height: 900px;
+        }
+
+        .login-form-all-btn{
+            position: relative;
+            width: 300px;
+        }
+        .dispay-log-form{
+            height: 600px;
+            display: flex;
         }
 }
 

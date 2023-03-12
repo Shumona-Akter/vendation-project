@@ -137,7 +137,7 @@ $('.customer-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplaySpeed: 500,
-  autoplay: false,
+  autoplay: true,
   arrows: false,
   responsive: [
       {

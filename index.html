@@ -32,6 +32,34 @@
 </head>
 <body>
     <header>
+      <div id="all-btn-modal" class="main-display-login-form d-none" >
+        <div class="login-form-all-btn">
+          <div class="dispay-log-form">
+            <div class="all-form-left">
+              <h1>Get in touch</h1>
+              <div action="">
+                <label>first name <span>*</span></label>
+                <input type="text" placeholder="Write here">
+                <label>Name of Venue/Brand <span>*</span></label>
+                <input type="text" placeholder="Write here">
+                <label>Location <span>*</span></label>
+                <input type="text" placeholder="Write here">
+                <label>Message <span>*</span></label>
+                <textarea placeholder="Write here"></textarea>
+                <p>250 characters max</p>
+                <button id="submit">Send</button>
+              </div>
+            </div>
+            <div class="all-form-right">
+              <img src="./images/Content/content-5.jpeg" alt="">
+            </div>
+          </div>
+          <div class="all-btn-close-btn" id="close-btn">
+              <i class="fa-solid fa-xmark"></i>
+          </div>
+  
+        </div>
+      </div>
         <!-- desktop nav -->
         <nav class="navbar navbar-expand-lg navbar-light violate-bg nav-position-fixed">
             <div class="container">
@@ -41,25 +69,25 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
+                  <li class="nav-item" >
                     <a class="nav-link active menu-a text-white px-3" aria-current="page" href="#how-we-work">how it works</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link menu-a menu-a text-white px-3" href="#your-benefits">your benefits</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link menu-a menu-a text-white px-3" href="#our-three-steps">case studies</a>
+                    <a class="nav-link menu-a menu-a text-white px-3" href="#paradise">case studies</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link menu-a menu-a text-white px-3" href="#paradise">about us</a>
+                    <a class="nav-link menu-a menu-a text-white px-3" href="#our-three-steps">about us</a>
                   </li>
-                  <li class="nav-item" id="nav-boots" >
+                  <li class="nav-item" onclick="modalContact()" id="nav-boots" >
                     <a class="nav-link menu-a menu-a text-white px-3" >contact us</a>
                   </li>
                   
                   <div class="d-flex align-items-center">
                     <li class="nav-item ">
-                        <a class="nav-link menu-a menu-a menu-btn text-black px-4" href="login.html">get a free booth</a>
+                        <a class="nav-link menu-a menu-a menu-btn text-black px-4" onclick="modalAllBtn()">get a free booth</a>
                       </li>
                     </div>
                 </ul>
@@ -162,7 +190,7 @@
                           <span class="d-block para-work"> In 2023, our custom-built photo booths can be found at more than 170 venues and events in the UK and Europe, and the best part? 
                               Not one of those venues has paid us a penny for the design, delivery or installation of their machine - in fact, we pay them.</span></p>
                           <div>
-                              <a class="menu-a menu-btn text-black px-4 mt-5 mb-4" href="login.html">Secure your workshop slot</a>
+                              <a class="menu-a menu-btn text-black px-4 mt-5 mb-4" onclick="modalAllBtn()">Secure your workshop slot</a>
                               <a  class="d-block see-work   pb-5 mb-2 text-black">See our work</a>
                           </div>
                   </div>
@@ -518,7 +546,7 @@
                   </div>
 
                   <div class="text-center">
-                    <a class="menu-btn text-black px-4 mt-5 mb-4" href="login.html">Get a free booth</a>
+                    <a class="menu-btn text-black px-4 mt-5 mb-4" onclick="modalAllBtn()">Get a free booth</a>
                 </div>
                 </div>
               </div>
@@ -533,7 +561,7 @@
               <h1 class="main-heading d-block d-sm-none">Wondering what our    booths look like in situ?</h1>
               <p>Every one of our business photo booths is built bespoke for the brand, check out our work in action</p>
               <div class="text-left">
-                <a class="menu-btn-aqua text-black px-4 mt-5 mb-4" href="login.html">Get a free booth</a>
+                <a class="menu-btn-aqua text-black px-4 mt-5 mb-4"  onclick="modalAllBtn()">Get a free booth</a>
             </div>
           </div>
           <!-- +boots sliider -->
@@ -541,207 +569,207 @@
           <div class="work-slider-first d-block d-md-none">
             <div class="customer-slider">
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/1.jpeg" alt="">
+                <img  onclick="modalAllBtn()" src="./images/Booth-slideshow/1.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/10.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/10.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/11.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/11.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/12.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/12.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/13.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/13.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/14.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/14.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/15.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/15.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/16.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/16.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/17.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/17.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/18.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/18.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/19.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/19.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/2.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/2.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/20.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/20.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/21.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/21.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/21.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/21.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/22.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/22.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/23.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/23.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/24.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/24.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/3.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/3.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/4.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/4.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/5.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/5.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/6.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/6.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/7.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/7.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/8.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/8.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/9.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/9.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/25.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/25.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/26.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/26.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/27.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/27.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/28.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/28.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/29.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/29.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/30.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/30.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/31.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/31.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/32.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/32.jpg" alt="">
               </div>
             </div>
            </div>
-
+<!-- contact sm -->
            <div class="work-slider-first container d-none d-md-block">
             <div class="customer-slider">
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/1.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/1.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/10.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/10.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/11.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/11.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/12.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/12.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/13.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/13.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/14.jpeg" alt="">
+                <img  onclick="modalAllBtn()" src="./images/Booth-slideshow/14.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/15.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/15.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/16.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/16.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/17.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/17.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/18.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/18.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/19.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/19.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/2.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/2.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/20.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/20.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/21.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/21.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/21.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/21.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/22.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/22.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/23.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/23.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/24.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/24.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/3.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/3.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/4.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/4.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/5.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/5.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/6.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/6.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/7.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/7.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/8.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/8.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/9.jpeg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/9.jpeg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/25.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/25.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/26.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/26.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/27.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/27.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/28.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/28.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/29.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/29.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/30.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/30.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/31.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/31.jpg" alt="">
               </div>
               <div class="slide-img">
-                <img src="./images/Booth-slideshow/32.jpg" alt="">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/32.jpg" alt="">
               </div>
             </div>
            </div>
@@ -787,7 +815,7 @@
                       </div>
   
                       <div class="text-left pt-5 mt-4" id="counter-boots">
-                        <a class="menu-btn-aqua text-black px-4 mt-5 mb-4" href="login.html">Get a free booth</a>
+                        <a class="menu-btn-aqua text-black px-4 mt-5 mb-4"  onclick="modalAllBtn()">Get a free booth</a>
                     </div>
                     </div>
   
@@ -849,7 +877,7 @@
                     </div>
     
                     <div class="text-left pt-5 mt-4" id="counter-boots">
-                      <a class="menu-btn-aqua text-black px-4 mt-5 mb-4" href="login.html">Get a free booth</a>
+                      <a class="menu-btn-aqua text-black px-4 mt-5 mb-4" onclick="modalAllBtn()">Get a free booth</a>
                   </div>
                   </div>
     
@@ -902,13 +930,12 @@
                   <div class="footer-item">
                     <p class="footer-heading">PAGES</p>
                     <div class="footer-page">
-                      <a href="">Home</a>
-                      <a href="">How it works</a>
-                      <a href="">Your Benefits</a>
-                      <a href="">Case Studies</a>
-                      <a href="">About Us</a>
-                      <a href="">Contact us</a>
-                      <a href="">Home</a>
+                      <a href="index.html">Home</a>
+                      <a href="#how-we-work">How it works</a>
+                      <a href="#your-benefits">Your Benefits</a>
+                      <a href="#paradise">Case Studies</a>
+                      <a href="#our-three-steps">About Us</a>
+                      <a class="text-white-con" onclick="modalAllBtn()">Contact us</a>
                     </div>
                   </div>
                 </div>
@@ -958,6 +985,7 @@
     <script src="./js/venobox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/close.js"></script>
     <script src="js/boots.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/venubox.js"></script>
