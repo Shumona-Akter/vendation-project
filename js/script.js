@@ -136,7 +136,7 @@ $('.customer-slider').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplaySpeed: 500,
+  autoplaySpeed: 2000,
   autoplay: true,
   arrows: false,
   responsive: [
@@ -146,7 +146,7 @@ $('.customer-slider').slick({
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
-            autoplaySpeed: 500,
+            autoplaySpeed: 2000,
             autoplay: true,
             arrows: false,
           }
@@ -157,7 +157,7 @@ $('.customer-slider').slick({
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
-            autoplaySpeed: 500,
+            autoplaySpeed: 2000,
             autoplay: true,
             arrows: false,
           }
